@@ -3,54 +3,366 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christophe Manzi | Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>Christophe Manzi | Quantitative Systems & Cognitive Architecture</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 24px -5px rgba(0, 0, 0, 0.12);
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 0.5rem;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: #3b82f6;
+            border-radius: 2px;
+        }
+        
+        .interest-tag {
+            transition: all 0.2s ease;
+        }
+        
+        .interest-tag:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        
+        .icon-box {
+            transition: all 0.2s ease;
+        }
+        
+        .icon-box:hover {
+            transform: scale(1.05);
+        }
+        
+        .accent-border {
+            border-left: 3px solid #3b82f6;
+        }
+    </style>
 </head>
-<body class="bg-gray-100 text-gray-900">
-    <nav class="bg-black text-white p-4 flex justify-between items-center">
-        <h1 class="text-xl font-bold">Home Page</h1>
-        <button class="bg-blue-500 text-white p-2 rounded"><i class="fas fa-plus"></i></button>
+<body class="bg-gray-50 text-gray-900">
+    
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50 border-b border-gray-200">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div>
+                    <h1 class="text-xl font-semibold tracking-tight text-gray-900">Christophe Manzi</h1>
+                    <p class="text-sm text-gray-600">Computer Science • Quantitative Systems</p>
+                </div>
+                <div class="flex gap-6 text-sm">
+                    <a href="#about" class="text-gray-600 hover:text-blue-600 transition font-medium">About</a>
+                    <a href="#work" class="text-gray-600 hover:text-blue-600 transition font-medium">Work</a>
+                    <a href="#interests" class="text-gray-600 hover:text-blue-600 transition font-medium">Interests</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-600 transition font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
     </nav>
     
-    <div class="container mx-auto p-6">
-        <div class="bg-white shadow-md p-4 mb-4 rounded"><h2>About Me</h2>
-            <p>I'm deeply interested in the intersection of trading, quantitative finance, emerging technologies, and perceptual intelligence. My work spans across algorithmic trading, DeFi, risk modeling, augmented reality (AR), and perceptual computing. With a BSc in Computer Science, Magna Cum Laude from Saint Mary’s University (2024), I have built systems that integrate data science, market analysis, and automation to uncover meaningful insights and accelerate decision-making.</p>
+    <!-- Hero Section -->
+    <div class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-4">Building Intelligence at the Intersection</h2>
+            <p class="text-lg text-gray-300 mb-8 max-w-3xl">
+                Fullstack Web Development, Quantitative systems, mathematical frameworks.
+            </p>
+            <div class="flex gap-4">
+                <a href="#contact" class="bg-blue-600 text-white px-6 py-2.5 rounded-lg font-medium hover:bg-blue-700 transition">
+                    Get in Touch
+                </a>
+                <a href="#work" class="border border-gray-400 text-gray-300 px-6 py-2.5 rounded-lg font-medium hover:bg-white hover:text-gray-900 transition">
+                    View Projects
+                </a>
+            </div>
         </div>
-        <div class="bg-white shadow-md p-4 mb-4 rounded"><h2>What I Work On</h2>
-            <ul>
-                <li>Quantitative Trading & Algorithmic Systems</li>
-                <li>DeFi & Financial Modeling</li>
-                <li>Augmented Reality (AR) & EEG-based Systems</li>
-                <li>Perceptual Intelligence & Recursive Computation</li>
-            </ul>
-        </div>
-        <div class="bg-white shadow-md p-4 mb-4 rounded"><h2>What Drives Me</h2>
-            <ul>
-                <li>Exploring Data Patterns & Hidden Insights</li>
-                <li>Accelerated Decision-Making & Intelligence Systems</li>
-                <li>Synthesizing Finance & Technology</li>
-            </ul>
-        </div>
-        <div class="bg-white shadow-md p-4 mb-4 rounded"><h2>Opportunities & Consulting</h2>
-            <p>I am open to discussing innovative projects, research collaborations, and consulting on topics related to:</p>
-            <ul>
-                <li>Quantitative trading & algorithmic strategy design</li>
-                <li>Market risk modeling & probability-based forecasting</li>
-                <li>Decentralized finance & smart contract risk assessment</li>
-                <li>Perceptual intelligence & recursive learning models</li>
-                <li>Biometric-driven AR/VR & EEG analysis</li>
-            </ul>
-        </div>
-        <div class="bg-white shadow-md p-4 mb-4 rounded"><h2>Contact</h2>
-            <p>📫 Get in Touch:</p>
-            <ul>
-                <li>LinkedIn: [Your LinkedIn Profile Here]</li>
-                <li>GitHub: [Your GitHub Profile Here]</li>
-                <li>Email: [Your Email Here]</li>
-            </ul>
-        </div>
-        <div class="bg-gray-200 text-center p-4 rounded">Footer</div>
     </div>
+    
+    <div class="container mx-auto px-6 py-12 max-w-6xl">
+        
+        <!-- About Me -->
+        <section id="about" class="mb-16">
+            <div class="bg-white shadow-sm rounded-lg p-8 border border-gray-200 card-hover">
+                <h2 class="text-3xl font-bold mb-6 section-title">About Me</h2>
+                <div class="prose prose-lg max-w-none">
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        I work at the intersection of <strong>quantitative finance, mathematical modeling, and cognitive systems</strong>. My focus spans algorithmic trading, DeFi protocols, the psychology of self-reference, and systems that bridge abstract mathematical structures with real-world phenomena.
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-6 mt-8">
+                    <div class="text-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                        <i class="fas fa-graduation-cap text-3xl mb-3 text-gray-700"></i>
+                        <div class="font-semibold text-gray-900">Education</div>
+                        <div class="text-sm text-gray-600">BSc Computer Science</div>
+                        <div class="text-xs text-gray-500">Magna Cum Laude, 2024</div>
+                    </div>
+                    <div class="text-center p-4 bg-gray-50 rounded-lg border border-gray-200">
+                        <i class="fas fa-chart-line text-3xl mb-3 text-gray-700"></i>
+                        <div class="font-semibold text-gray-900">Focus Areas</div>
+                        <div class="text-sm text-gray-600">Quantitative • Math • AI</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- What I Work On -->
+        <section id="work" class="mb-16">
+            <div class="bg-white shadow-sm rounded-lg p-8 border border-gray-200 card-hover">
+                <h2 class="text-3xl font-bold mb-6 section-title">What I Work On</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="accent-border pl-4 py-2">
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-chart-line text-blue-600 text-xl mt-1 icon-box"></i>
+                            <div>
+                                <h3 class="font-semibold text-lg mb-1 text-gray-900">Quantitative Trading & Algorithmic Systems</h3>
+                                <p class="text-gray-600 text-sm">Automated trading systems, backtesting frameworks, probability-based forecasting, and market microstructure analysis</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accent-border pl-4 py-2">
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-coins text-blue-600 text-xl mt-1 icon-box"></i>
+                            <div>
+                                <h3 class="font-semibold text-lg mb-1 text-gray-900">DeFi & Financial Modeling</h3>
+                                <p class="text-gray-600 text-sm">Smart contract risk assessment, liquidity mechanisms, and decentralized market dynamics</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accent-border pl-4 py-2">
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-brain text-blue-600 text-xl mt-1 icon-box"></i>
+                            <div>
+                                <h3 class="font-semibold text-lg mb-1 text-gray-900">Perceptual Intelligence & EEG Systems</h3>
+                                <p class="text-gray-600 text-sm">Brain-computer interfaces using Muse 2, real-time cognitive state analysis, augmented reality integration</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accent-border pl-4 py-2">
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-project-diagram text-blue-600 text-xl mt-1 icon-box"></i>
+                            <div>
+                                <h3 class="font-semibold text-lg mb-1 text-gray-900">Mathematical Frameworks & Topology</h3>
+                                <p class="text-gray-600 text-sm">Toroidal structures, geometric models of self-reference, duality frameworks, and recursive transformations</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accent-border pl-4 py-2">
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-database text-blue-600 text-xl mt-1 icon-box"></i>
+                            <div>
+                                <h3 class="font-semibold text-lg mb-1 text-gray-900">Data Platforms & Visualization</h3>
+                                <p class="text-gray-600 text-sm">Digital transformation for East African organizations, interactive visualizations with Three.js, narrative graph systems</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accent-border pl-4 py-2">
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-microphone-alt text-blue-600 text-xl mt-1 icon-box"></i>
+                            <div>
+                                <h3 class="font-semibold text-lg mb-1 text-gray-900">MM App Development</h3>
+                                <p class="text-gray-600 text-sm">React Native app combining real-time audio transcription with AI-powered concept extraction and visualization</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Interests & Explorations -->
+        <section id="interests" class="mb-16">
+            <div class="bg-white shadow-sm rounded-lg p-8 border border-gray-200 card-hover">
+                <h2 class="text-3xl font-bold mb-6 section-title">Current Interests & Explorations</h2>
+                
+                <div class="mb-8">
+                    <h3 class="font-semibold text-xl mb-4 text-gray-800">Physics & Mathematics</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="interest-tag px-4 py-2 bg-gray-100 text-gray-700 border border-gray-300 rounded-lg text-sm font-medium cursor-pointer">Toroidal Cosmology</span>
+                        <span class="interest-tag px-4 py-2 bg-gray-100 text-gray-700 border border-gray-300 rounded-lg text-sm font-medium cursor-pointer">Spacetime Geometry</span>
+                        <span class="interest-tag px-4 py-2 bg-gray-100 text-gray-700 border border-gray-300 rounded-lg text-sm font-medium cursor-pointer">Light Cones & Causality</span>
+                        <span class="interest-tag px-4 py-2 bg-gray-100 text-gray-700 border border-gray-300 rounded-lg text-sm font-medium cursor-pointer">Fourier Analysis</span>
+                        <span class="interest-tag px-4 py-2 bg-gray-100 text-gray-700 border border-gray-300 rounded-lg text-sm font-medium cursor-pointer">Fractal Geometry</span>
+                        <span class="interest-tag px-4 py-2 bg-gray-100 text-gray-700 border border-gray-300 rounded-lg text-sm font-medium cursor-pointer">Acoustic Levitation</span>
+                        <span class="interest-tag px-4 py-2 bg-gray-100 text-gray-700 border border-gray-300 rounded-lg text-sm font-medium cursor-pointer">Wave Physics</span>
+                    </div>
+                </div>
+                
+                <div class="mb-8">
+                    <h3 class="font-semibold text-xl mb-4 text-gray-800">Psychology of Self & Duality</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="interest-tag px-4 py-2 bg-gray-100 text-gray-700 border border-gray-300 rounded-lg text-sm font-medium cursor-pointer">Self-Reference & Recursion</span>
+                        <span class="interest-tag px-4 py-2 bg-gray-100 text-gray-700 border border-gray-300 rounded-lg text-sm font-medium cursor-pointer">Internal-External Dynamics</span>
+                        <span class="interest-tag px-4 py-2 bg-gray-100 text-gray-700 border border-gray-300 rounded-lg text-sm font-medium cursor-pointer">Observer-Observed Duality</span>
+                        <span class="interest-tag px-4 py-2 bg-gray-100 text-gray-700 border border-gray-300 rounded-lg text-sm font-medium cursor-pointer">Parallax Perception</span>
+                        <span class="interest-tag px-4 py-2 bg-gray-100 text-gray-700 border border-gray-300 rounded-lg text-sm font-medium cursor-pointer">Identity Transformations</span>
+                        <span class="interest-tag px-4 py-2 bg-gray-100 text-gray-700 border border-gray-300 rounded-lg text-sm font-medium cursor-pointer">Phenomenology</span>
+                        <span class="interest-tag px-4 py-2 bg-gray-100 text-gray-700 border border-gray-300 rounded-lg text-sm font-medium cursor-pointer">Embodied Cognition</span>
+                    </div>
+                </div>
+                
+                <div class="mb-8">
+                    <h3 class="font-semibold text-xl mb-4 text-gray-800">Technology & Systems</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="interest-tag px-4 py-2 bg-gray-100 text-gray-700 border border-gray-300 rounded-lg text-sm font-medium cursor-pointer">React & Three.js</span>
+                        <span class="interest-tag px-4 py-2 bg-gray-100 text-gray-700 border border-gray-300 rounded-lg text-sm font-medium cursor-pointer">AWS Serverless</span>
+                        <span class="interest-tag px-4 py-2 bg-gray-100 text-gray-700 border border-gray-300 rounded-lg text-sm font-medium cursor-pointer">Real-time Audio Processing</span>
+                        <span class="interest-tag px-4 py-2 bg-gray-100 text-gray-700 border border-gray-300 rounded-lg text-sm font-medium cursor-pointer">Generative Systems (Tone.js)</span>
+                        <span class="interest-tag px-4 py-2 bg-gray-100 text-gray-700 border border-gray-300 rounded-lg text-sm font-medium cursor-pointer">Interactive Visualizations</span>
+                        <span class="interest-tag px-4 py-2 bg-gray-100 text-gray-700 border border-gray-300 rounded-lg text-sm font-medium cursor-pointer">EEG Data Analysis</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="font-semibold text-xl mb-4 text-gray-800">Creative & Cultural</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="interest-tag px-4 py-2 bg-gray-100 text-gray-700 border border-gray-300 rounded-lg text-sm font-medium cursor-pointer">Anime</span>
+                        <span class="interest-tag px-4 py-2 bg-gray-100 text-gray-700 border border-gray-300 rounded-lg text-sm font-medium cursor-pointer">Visual/Spatial Thinking</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- What Drives Me -->
+        <section class="mb-16">
+            <div class="bg-slate-800 text-white shadow-sm rounded-lg p-8 border border-gray-700">
+                <h2 class="text-3xl font-bold mb-6">What Drives Me</h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-slate-700 bg-opacity-50 p-6 rounded-lg border border-slate-600">
+                        <i class="fas fa-search text-3xl mb-4 text-blue-400"></i>
+                        <h3 class="font-semibold text-lg mb-2">Pattern Recognition</h3>
+                        <p class="text-gray-300 text-sm">Discovering hidden structures across domains—from market data to self-referential systems</p>
+                    </div>
+                    <div class="bg-slate-700 bg-opacity-50 p-6 rounded-lg border border-slate-600">
+                        <i class="fas fa-bolt text-3xl mb-4 text-blue-400"></i>
+                        <h3 class="font-semibold text-lg mb-2">Accelerated Understanding</h3>
+                        <p class="text-gray-300 text-sm">Building systems that compress time-to-insight and enhance decision-making</p>
+                    </div>
+                    <div class="bg-slate-700 bg-opacity-50 p-6 rounded-lg border border-slate-600">
+                        <i class="fas fa-link text-3xl mb-4 text-blue-400"></i>
+                        <h3 class="font-semibold text-lg mb-2">Cross-Domain Synthesis</h3>
+                        <p class="text-gray-300 text-sm">Connecting mathematics, physics, finance, and cognitive architecture into unified frameworks</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Consulting -->
+        <section class="mb-16">
+            <div class="bg-white shadow-sm rounded-lg p-8 border border-gray-200 card-hover">
+                <h2 class="text-3xl font-bold mb-6 section-title">Opportunities & Consulting</h2>
+                <p class="text-gray-700 mb-6 text-lg">
+                    Open to discussing innovative projects, research collaborations, and consulting on:
+                </p>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-lg border border-gray-200">
+                        <i class="fas fa-check-circle text-blue-600 text-xl mt-1"></i>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Quantitative Trading Strategy Design</h4>
+                            <p class="text-sm text-gray-600">Algorithmic systems, backtesting, risk modeling</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-lg border border-gray-200">
+                        <i class="fas fa-check-circle text-blue-600 text-xl mt-1"></i>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">DeFi Protocol Analysis</h4>
+                            <p class="text-sm text-gray-600">Smart contract auditing, liquidity mechanisms</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-lg border border-gray-200">
+                        <i class="fas fa-check-circle text-blue-600 text-xl mt-1"></i>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Mathematical Framework Development</h4>
+                            <p class="text-sm text-gray-600">Topological models, geometric representations</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-lg border border-gray-200">
+                        <i class="fas fa-check-circle text-blue-600 text-xl mt-1"></i>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Perceptual Intelligence Systems</h4>
+                            <p class="text-sm text-gray-600">EEG analysis, brain-computer interfaces, AR/VR</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact -->
+        <section id="contact" class="mb-16">
+            <div class="bg-slate-800 text-white shadow-sm rounded-lg p-8 border border-slate-700">
+                <h2 class="text-3xl font-bold mb-6">Get in Touch</h2>
+                <p class="text-gray-300 mb-8 text-lg">
+                    Interested in collaborating or discussing ideas? Let's connect.
+                </p>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank" class="flex items-center gap-4 p-4 bg-slate-700 rounded-lg border border-slate-600 hover:bg-slate-600 transition">
+                        <i class="fab fa-linkedin text-3xl text-blue-400"></i>
+                        <div>
+                            <div class="font-semibold">LinkedIn</div>
+                            <div class="text-sm text-gray-400">Professional network</div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/galileochr" target="_blank" class="flex items-center gap-4 p-4 bg-slate-700 rounded-lg border border-slate-600 hover:bg-slate-600 transition">
+                        <i class="fab fa-github text-3xl text-gray-300"></i>
+                        <div>
+                            <div class="font-semibold">GitHub</div>
+                            <div class="text-sm text-gray-400">Code & projects</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="gradient-bg text-white text-center py-6 border-t border-gray-700">
+        <p class="text-gray-300 mb-2">© 2025 Christophe Manzi</p>
+        <p class="text-sm text-gray-400">Computer Science · Quantitative Systems</p>
+    </footer>
+    
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
